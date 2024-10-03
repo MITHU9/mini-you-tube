@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH-Tube</title>
+    <link rel="stylesheet" href="./output/output.css" />
+  </head>
+  <body>
+    <header class="mx-10 py-4">
+      <nav class="flex justify-between items-center border-b py-4">
+        <div class="navbar-start hidden md:flex w-[100px]">
+          <img src="./assets/Logo.png" alt="logo" />
+        </div>
+
+        <div>
+          <label class="input input-bordered flex items-center gap-2">
+            <input
+              id="search-input"
+              type="text"
+              class="grow"
+              placeholder="Search"
+            />
+            <button id="search-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="h-4 w-4 opacity-70"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </label>
+        </div>
+        <div class="hidden md:flex">
+          <button
+            id="sort-btn"
+            class="bg-red-500 py-2 px-4 rounded text-lg font-semibold hover:bg-red-600"
+          >
+            <a href="#" class="">Sort by view </a>
+          </button>
+        </div>
+      </nav>
+
+      <div class="flex items-center justify-center mt-8">
+        <div id="category-btns" class="flex gap-4 text-gray-800 font-semibold">
+          <button id="all-btn" class="bg-red-500 py-1 px-4 rounded">All</button>
+        </div>
+      </div>
+    </header>
+    <main class="mt-5">
+      <div
+        id="videos-container"
+        class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 relative h-[70vh]"
+      >
+        <!-- === all videos will be displayed here === -->
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <!-- <script src="./js/function.js"></script> -->
+  </body>
+</html>
